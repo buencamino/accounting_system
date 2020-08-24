@@ -1,0 +1,27 @@
+missing modules:
+*DONE* View
+- show all deposit/withdrawal transactions for account code/type for this year
+
+*DONE* Summation
+- how to operate what is calculated
+* calculated by account code (a,b,c,d..) for this year only
+
+*DONE* List
+- what is this?
+things to do
+
+done - error checking for not existing account code records in list/print module of accounts
+done - sum of amount column in report
+- account code, code type
+
+- D01 transactions for the entire year
+- print immediately
+
+*DONE*Reports
+- which columns are printed
+research on sql statement to display distinct account code and code type and sum of amount of each
+
+- separate print for code and main?
+- is a summary for the year
+
+keycontrol of code update/delete

@@ -1,0 +1,15 @@
+show databases;
+
+use uytit;
+
+show tables;
+
+create table testing (userid int(10) primary key auto_increment not null, username varchar(25) not null);
+
+show tables;
+
+select * from testing;
+
+create table testing1 (userid int(10) primary key, description varchar(40));
+
+use sakila

@@ -1,0 +1,31 @@
+...poi-3.7-20101029.jar
+...commons-beanutils-1.8.0.jar
+...commons-collections-3.2.1.jar
+...commons-digester-2.1.jar
+...commons-javaflow-20060411.jar
+...commons-logging-1.1.1.jar
+...groovy-all-2.0.1.jar
+...iText-2.1.7.js2.jar
+...jcommon-1.0.15.jar
+...jfreechart-1.0.12.jar
+
+
+The jars need to be included are-
+
+1.commons-beanutils-x.x.x.jar
+
+2.commons-collections-x.x.x.jar
+
+3.commons-digester-x.x.jar
+
+4.commons-logging-x.x.jar
+
+5.groovy-all-x.x.x.jar(if the report language is deafult Groovy)
+
+6.iText-x.x.x.jar(For PDF Exports)
+
+7.jasperreports-x.x.x.jar
+
+8.poi-x.x.jar(for excel exports)
+
+9.jfreechart-x.x.x.jar

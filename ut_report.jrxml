@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ut_report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="75120410-df4a-4445-9f10-d172de978cc8">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="page" class="java.lang.String"/>
+	<field name="line" class="java.lang.String"/>
+	<field name="refpage" class="java.lang.String"/>
+	<field name="refline" class="java.lang.String"/>
+	<field name="transaction_date" class="java.lang.String"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="account_code" class="java.lang.String"/>
+	<field name="code_type" class="java.lang.String"/>
+	<field name="issue_date" class="java.lang.String"/>
+	<field name="amount" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="53" splitType="Stretch">
+			<image>
+				<reportElement x="366" y="0" width="209" height="50" uuid="08380b49-9792-4cc3-a949-27533eba92c4"/>
+				<imageExpression><![CDATA["report.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="20" width="100" height="22" uuid="0362df88-c710-4846-8ddf-f13d6c6978b7"/>
+				<textElement>
+					<font fontName="Trebuchet MS" size="14"/>
+				</textElement>
+				<text><![CDATA[Uy Tit Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="20" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="360" y="0" width="100" height="20" uuid="2bfaca5f-402d-4549-8198-ba5e9a384204"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="460" y="0" width="100" height="20" uuid="b090400d-300d-4dea-8eb3-b7253ffd5231"/>
+				<textElement>
+					<font fontName="Arial Narrow"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="30" height="20" uuid="39c683e0-58e7-4373-8fd5-685afac8c8f3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea037ca1-aeea-40ef-96cf-277006fcd949"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<text><![CDATA[Page]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="0" width="30" height="21" uuid="89b852d0-6c7e-4dff-8aea-c9357eb96c2b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="57579cde-71a9-478c-8488-ae0252761fc0"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<text><![CDATA[Line]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="0" width="40" height="21" uuid="663cfcee-0dbe-4b4a-9267-bd4fa9f58261">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0a270d86-b41a-4f50-aa9c-4d67e9f60db2"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<text><![CDATA[Ref Page]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="40" height="21" uuid="c56c2927-75d3-43b9-954d-ca32a585fa1c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="222a5897-171f-4520-af28-30a01e2be501"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<text><![CDATA[Ref Line]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="0" width="50" height="21" uuid="4de227dd-1925-46a4-b668-cb45f0370a13">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="85d71089-456b-4058-bbf1-642e654476b2"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<text><![CDATA[Txn Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="0" width="140" height="21" uuid="54eac802-344b-419c-8b5c-96b5c52d3653">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34f51e5e-033e-45db-9c9b-a9c32f0bc9c0"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="50" height="21" uuid="02aecac2-be1f-4871-9942-e854c4f490b7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0e0627a-f593-46da-b4bf-6f08ed3546fe"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<text><![CDATA[Acct Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="0" width="50" height="21" uuid="ddc1096c-8ee4-45b9-8d88-fa3092bed87f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ac30d909-ddfd-4ae2-a74e-9cd964ffc86a"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<text><![CDATA[Code Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="0" width="70" height="21" uuid="4c8c523e-00e6-4e16-b3ce-6d4619640b5d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3d814f22-dee1-49c0-a05c-6b068261c08c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<text><![CDATA[Issue Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="70" height="20" uuid="a6d665f5-46c8-479b-ab8c-a0cfeb075f42">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2db8eb0a-fbca-45d2-a7fa-e20fe2dc86e4"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="30" height="20" uuid="56d164d8-fe50-4eec-ac9e-c57fa43d10b6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea037ca1-aeea-40ef-96cf-277006fcd949"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{page}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="0" width="30" height="20" uuid="6375e095-50b8-4078-8819-129d6712052b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="57579cde-71a9-478c-8488-ae0252761fc0"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{line}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="0" width="40" height="20" uuid="5511e3ed-d32a-40e0-a469-79eea1ee7c2f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0a270d86-b41a-4f50-aa9c-4d67e9f60db2"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{refpage}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="40" height="20" uuid="884dfbfa-6d04-41aa-9e59-34ae038b08f7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="222a5897-171f-4520-af28-30a01e2be501"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{refline}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="50" height="20" uuid="0c5ef0c9-060a-4a54-bfe6-eaafe4514044">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="85d71089-456b-4058-bbf1-642e654476b2"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transaction_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="140" height="20" uuid="bf283182-b3f2-48b4-9d7e-beb277bb9c4f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34f51e5e-033e-45db-9c9b-a9c32f0bc9c0"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="50" height="20" uuid="cea0e005-a09d-4f3c-936e-36b2396e45bc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0e0627a-f593-46da-b4bf-6f08ed3546fe"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{account_code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="50" height="20" uuid="981ba618-f3df-4da8-83e2-b34d2ae96991">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ac30d909-ddfd-4ae2-a74e-9cd964ffc86a"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{code_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="70" height="20" uuid="a16d08e2-13c1-436f-a899-4b7491db4bab">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3d814f22-dee1-49c0-a05c-6b068261c08c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{issue_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="70" height="20" uuid="966d130f-8322-45e2-8d85-6f0667f08a81">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2db8eb0a-fbca-45d2-a7fa-e20fe2dc86e4"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Lucida Console" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="260" y="0" width="40" height="20" uuid="791de98b-2f3a-4a3f-86ef-f47d825fc320"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
